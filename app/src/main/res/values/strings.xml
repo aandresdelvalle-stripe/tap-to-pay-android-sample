@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Stripe Terminal Apps on Devices</string>
+    <string name="payment_button">New payment</string>
+    <string name="request_payment_button">Request payment</string>
+    <string name="terminal_app_description">Terminal sample app</string>
+    <string name="keypad_prompt">Enter amount</string>
+    <string name="payment_complete_title">Payment complete</string>
+    <string name="payment_complete_description">You can navigate with the options below</string>
+    <string name="back_button">Back to app home</string>
+    <string name="stripe_logo_description">Stripe logo</string>
+    <string name="receipt_description">Receipt icon</string>
+</resources>
