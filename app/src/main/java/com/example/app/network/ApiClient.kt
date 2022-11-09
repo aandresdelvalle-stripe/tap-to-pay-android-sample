@@ -1,5 +1,6 @@
 package com.example.app.network
 
+import com.example.app.helpers.Vars
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.stripe.stripeterminal.external.models.ConnectionTokenException
 import okhttp3.OkHttpClient
@@ -10,7 +11,7 @@ import java.io.IOException
 // The 'ApiClient' is a singleton object used to make calls to our backend and return their results
 object ApiClient {
 
-    private const val BACKEND_URL = "https://stripe-terminal-example.glitch.me"
+    private const val BACKEND_URL = Vars.ServerURL;
 
     private val client = OkHttpClient.Builder()
         .addNetworkInterceptor(StethoInterceptor())

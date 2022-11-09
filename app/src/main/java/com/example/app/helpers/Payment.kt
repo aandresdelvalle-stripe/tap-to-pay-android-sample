@@ -31,7 +31,7 @@ class Payment {
         onFailure: (e: TerminalException) -> Unit
     ) {
         val paymentIntentParams =
-            PaymentIntentParameters.Builder().setAmount(amount).setCurrency("usd")
+            PaymentIntentParameters.Builder().setAmount(amount).setCurrency(Vars.Currency)
                 .build()
 
         val paymentIntentCallBack = object : PaymentIntentCallback {
@@ -43,7 +43,8 @@ class Payment {
                 onSuccess(paymentIntent)
             }
         }
-        Terminal.getInstance().createPaymentIntent(paymentIntentParams, paymentIntentCallBack)
+        val term = Terminal.getInstance();
+        term.createPaymentIntent(paymentIntentParams, paymentIntentCallBack)
     }
 
     private fun _collectPayment(

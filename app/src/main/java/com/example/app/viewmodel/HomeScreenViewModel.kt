@@ -2,6 +2,7 @@ package com.example.app.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
+import com.example.app.helpers.Vars
 import com.stripe.stripeterminal.Terminal
 import com.stripe.stripeterminal.external.callable.*
 import com.stripe.stripeterminal.external.models.*
@@ -9,8 +10,9 @@ import com.stripe.stripeterminal.external.models.*
 class HomeScreenViewModel : ViewModel() {
     private var discoveryCancelable: Cancelable? = null
 
+    //TODO: CHANGEME
     companion object {
-        private const val LOCATION: String = "tml_EKoSwKZA3iETqd"
+        private const val LOCATION: String = Vars.LocationID;
     }
 
     fun startDiscovery(
