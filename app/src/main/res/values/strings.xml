@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Stripe Terminal Apps on Devices</string>
+    <string name="app_name">TAP2PAY</string>
     <string name="payment_button">New payment</string>
     <string name="request_payment_button">Request payment</string>
     <string name="terminal_app_description">Terminal sample app</string>

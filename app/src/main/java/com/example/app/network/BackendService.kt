@@ -8,10 +8,10 @@ import retrofit2.http.POST
 
 interface BackendService {
 
-    @POST("connection-token")
+    @POST("connection_token")
     fun getConnectionToken(): Call<ConnectionToken>
 
     @FormUrlEncoded
-    @POST("capture-payment-intent")
+    @POST("capture_payment_intent")
     fun capturePaymentIntent(@Field("payment_intent_id") id: String): Call<Void>
 }

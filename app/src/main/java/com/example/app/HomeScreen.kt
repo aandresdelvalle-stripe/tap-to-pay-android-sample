@@ -62,7 +62,7 @@ fun SettingsIcon(onClick: () -> Unit) {
 @Composable
 fun HomeScreen(navController: NavController, viewModel: HomeScreenViewModel = viewModel()) {
     viewModel.startDiscovery(
-        onSuccess = { Log.d("HomeScreen", "Discovered reader") },
+        onSuccess = { Log.d("StripeTerminal - HomeScreen", "Discovered reader") },
         onFailure = { "Didn't discover reader" })
     val context = LocalContext.current
     Surface(

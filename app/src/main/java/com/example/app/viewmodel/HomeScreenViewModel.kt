@@ -10,7 +10,7 @@ import com.stripe.stripeterminal.external.models.*
 class HomeScreenViewModel : ViewModel() {
     private var discoveryCancelable: Cancelable? = null
 
-    //TODO: CHANGEME
+    //TODO: CHANGEME - UK
     companion object {
         private const val LOCATION: String = Vars.LocationID;
     }
@@ -50,10 +50,12 @@ class HomeScreenViewModel : ViewModel() {
         val readerCallback = object : ReaderCallback {
             override fun onFailure(e: TerminalException) {
                 TODO("Not yet implemented")
+                Log.d("StripeTerminal-Reader", "Reader NOT CONNECTED")
+
             }
 
             override fun onSuccess(reader: Reader) {
-                Log.d("connectReader", "Reader connected")
+                Log.d("StripeTerminal-Reader", "Reader connected")
             }
         }
         Terminal.getInstance().connectLocalMobileReader(reader, config,  readerCallback)
