@@ -1,4 +1,4 @@
-# Android Tap to Pay Sample - original adapted to work in GBP
+# Android Tap to Pay Sample - original by @tedsch adapted to work in GBP
 
 Modify the variables in vars.kt to get it to work with a different currency / server.  
 
