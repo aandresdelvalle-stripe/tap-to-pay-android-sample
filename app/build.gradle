@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId "com.example.app"
         minSdk 21
-        targetSdk 32
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -38,7 +38,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = '1.1.1'
+        kotlinCompilerExtensionVersion = '1.4.1'
     }
     packagingOptions {
         resources {
@@ -64,8 +64,8 @@ repositories {
 
 dependencies {
 
-    implementation "com.stripe:stripeterminal-localmobile:2.14.0-b0"
-    implementation "com.stripe:stripeterminal-core:2.14.0-b0"
+    implementation "com.stripe:stripeterminal:2.20.1"
+    implementation "com.stripe:stripeterminal-localmobile:2.20.1"
 
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
